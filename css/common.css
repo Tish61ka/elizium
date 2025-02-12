@@ -1,0 +1,94 @@
+@font-face {
+    src: url('../fonts/Font.ttf') format('truetype');
+    font-family: "font";
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+
+    /* colors */
+
+    --black: black;
+    --white: white;
+    --accent: #D3B17D;
+    --txt: #070707;
+    --back: #F0EEEE;
+
+    /* fonts */
+
+    --font: "font"
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    background-color: var(--back);
+
+    overflow-x: hidden;
+}
+
+body * {
+    font-family: var(--font);
+
+    color: var(--txt);
+}
+
+div>img,
+a>img {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+
+/* для кнопок */
+
+.trans {
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+}
+
+.default-anim-a {
+    position: relative;
+}
+
+.default-anim-a::before {
+    content: "";
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    width: 0;
+    height: 1px;
+
+    background-color: color-mix(in srgb, var(--txt), transparent 70%);
+
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+}
+
+.default-anim-a:hover::before {
+    width: 100%;
+}
+
+/* для cекций */
+
+.container {
+    width: 100%;
+    max-width: 1750px;
+
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* для заголовков */
+
+.title {
+    font-weight: 400;
+    font-size: 48px;
+}
