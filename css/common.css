@@ -86,6 +86,10 @@ a>img {
     padding: 0 10px;
 }
 
+.section {
+    padding-top: 100px;
+}
+
 /* для заголовков */
 
 .title {
