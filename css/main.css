@@ -39,8 +39,7 @@ header {
 
 .burger {
     position: relative;
-
-    display: none;
+    s display: none;
     flex-direction: column;
     gap: 5px;
 
