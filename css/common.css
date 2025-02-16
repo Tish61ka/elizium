@@ -90,9 +90,58 @@ a>img {
     padding-top: 100px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 /* для заголовков */
 
 .title {
     font-weight: 400;
     font-size: 48px;
+}
+
+@media (max-width: 650px) {
+
+    .title {
+        font-size: 36px;
+    }
+}
+
+/* для кнопок */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: var(--black);
+}
+
+.default-btn {
+    border: 1px solid var(--black);
+
+    padding: 12px 110px;
+}
+
+.default-btn:hover {
+    background-color: var(--black);
+
+    color: var(--white);
+}
+
+@media (max-width: 650px) {
+
+    .default-btn {
+        padding: 0 55px;
+        padding-top: 2px;
+        padding-bottom: 9px;
+    }
 }
