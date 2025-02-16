@@ -96,6 +96,17 @@ a>img {
     gap: 40px;
 }
 
+@media (max-width: 650px) {
+
+    .section {
+        padding-top: 20px;
+    }
+
+    .wrapper {
+        gap: 20px;
+    }
+}
+
 /* для заголовков */
 
 .title {

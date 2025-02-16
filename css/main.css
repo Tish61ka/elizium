@@ -331,3 +331,46 @@ header {
         font-size: 15px;
     }
 }
+
+/*--------------------------------------------------------------------------------------*/
+/* articles*/
+
+.about__wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about__wrapper-content__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 740px;
+}
+
+.about__wrapper-content__item p {
+    font-size: 22px;
+}
+
+.about__wrapper-content__item a {
+    margin-top: 15px;
+}
+
+@media (max-width: 650px) {
+
+    .about__wrapper-content__item p {
+        font-size: 15px;
+    }
+
+    .about__wrapper-content__item {
+        gap: 10px;
+    }
+
+    .about__wrapper-content__item a {
+        margin-top: 0;
+    }
+}
