@@ -42,6 +42,10 @@ a>img {
     object-fit: cover;
 }
 
+.rel {
+    position: relative;
+}
+
 
 /* для кнопок */
 
@@ -65,7 +69,7 @@ a>img {
     width: 0;
     height: 1px;
 
-    background-color: color-mix(in srgb, var(--txt), transparent 70%);
+    background-color: color-mix(in srgb, var(--txt), transparent 0%);
 
     transition: 400ms;
     -webkit-transition: 400ms;
@@ -142,7 +146,14 @@ a>img {
     padding: 12px 110px;
 }
 
-.default-btn:hover {
+.small-btn {
+    border: 1px solid var(--black);
+
+    padding: 12px 8px;
+}
+
+.default-btn:hover,
+.small-btn:hover {
     background-color: var(--black);
 
     color: var(--white);
@@ -154,5 +165,10 @@ a>img {
         padding: 0 55px;
         padding-top: 2px;
         padding-bottom: 9px;
+    }
+
+    .small-btn {
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 }

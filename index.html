@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/common.css">
 
-    <!-- ------------------------------------ Основные стили ------------------------------------------ -->
+    <!-------------------------------------- Основные стили -------------------------------------------->
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -26,6 +26,7 @@
                 <ul>
                     <li>
                         <a href="" class="trans default-anim-a">Сексологи</a>
+                        <!-- На открытой странице добавляй active -->
                     </li>
                     <li>
                         <a href="" class="trans default-anim-a">Психологи</a>
@@ -47,6 +48,9 @@
         </div>
     </header>
     <main>
+
+        <!-------------------------------------- Контент для главной -------------------------------------------->
+
         <section class="main">
             <div class="main__wrapper container">
                 <div class="main__img">
@@ -179,6 +183,91 @@
                         <div>
                             <img src="/images/films-4.jpg" alt="">
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------- Контент для сексологи и психологи и тесты -------------------------------------------->
+
+
+        <section class="sex-main">
+            <div class="container">
+                <img src="/images/sex-1.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="section specialist">
+            <div class="wrapper container rel">
+                <h1 class="title">Выберите своего специалиста</h1>
+                <div class="specialist__wrapper">
+                    <div class="specialist__wrapper-item">
+                        <div class="specialist__wrapper-item__img">
+                            <img src="/images/sex-2.jpg" alt="">
+                        </div>
+                        <div class="specialist__wrapper-item__content">
+                            <h2>Понуровская <br> Анастасия Владимировна</h2>
+                            <div>
+                                <p>Психолог, сексолог</p>
+                                <p>Образование: Московский институт технологий и управления</p>
+                                <p>Прием (1 ч): 2800 руб.</p>
+                            </div>
+                            <button class="btn small-btn trans">Записаться на прием</button>
+                        </div>
+                    </div>
+                    <div class="specialist__wrapper-item">
+                        <div class="specialist__wrapper-item__img">
+                            <img src="/images/sex-3.jpg" alt="">
+                        </div>
+                        <div class="specialist__wrapper-item__content">
+                            <h2>Адамцова <br> Анастасия Владимировна</h2>
+                            <div>
+                                <p>Психолог, сексолог</p>
+                                <p>Образование: Московский институт психологии</p>
+                                <p>Прием (1,5 ч): 2000 руб.</p>
+                            </div>
+                            <button class="btn small-btn trans">Записаться на прием</button>
+                        </div>
+                    </div>
+                    <div class="specialist__wrapper-item">
+                        <div class="specialist__wrapper-item__img">
+                            <img src="/images/sex-4.jpg" alt="">
+                        </div>
+                        <div class="specialist__wrapper-item__content">
+                            <h2>Панферова <br> Лилия Александровна</h2>
+                            <div>
+                                <p>Психолог, сексолог</p>
+                                <p>Образование: Московский институт технологий и управления</p>
+                                <p>Прием (1ч): 3000 руб.</p>
+                            </div>
+                            <button class="btn small-btn trans">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------------------- Модалка для секции специалисты (по идее нет на тестах) -------------------------------------------->
+
+                <div class="specialist__modal"> <!-- При клике на кнопку добавляй active -->
+                    <span class="specialist__modal-close">
+                        <img src="/images//icons/close.svg" alt="">
+                    </span>
+                    <div class="specialist__modal-wrapper">
+                        <h3>Запись на прием</h3>
+                        <form>
+                            <input type="text" required name="specialist__modal-name" placeholder="ФИО">
+                            <input type="email" required name="specialist__modal-email" placeholder="Email">
+                            <div class="rel">
+                                <input type="date" name="specialist__modal-date" id="specialist__modal-date-1"
+                                    title="Выберите дату">
+                                <label for="specialist__modal-date-1">
+                                    <p>Выберите дату</p>
+                                    <div>
+                                        <img src="/images//icons/calendar.svg" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn small-btn trans">Продолжить</button>
+                        </form>
                     </div>
                 </div>
             </div>
