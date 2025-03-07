@@ -1093,3 +1093,50 @@ header {
         width: 100%;
     }
 }
+
+/*--------------------------------------------------------------------------------------*/
+/* article-main */
+
+.article-main {
+    padding-top: 65px;
+}
+
+.article-main__wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
+    padding-right: 100px;
+}
+
+.article-main__wrapper-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .article-main__wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .article-main__wrapper-item:first-of-type {
+        display: none;
+    }
+
+    .article-main__wrapper-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .article-main__wrapper-item:last-of-type {
+        display: none;
+    }
+
+    .article-main__wrapper-item {
+        flex: 1 0 100%;
+    }
+}
