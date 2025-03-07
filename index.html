@@ -25,7 +25,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="" class="trans default-anim-a">Сексологи</a>
+                        <a href="" class="trans default-anim-a ">Сексологи</a>
                         <!-- На открытой странице добавляй active -->
                     </li>
                     <li>
@@ -200,6 +200,20 @@
         <section class="section specialist">
             <div class="wrapper container rel">
                 <h1 class="title">Выберите своего специалиста</h1>
+
+                <!-------------------------------------- Кнопочки для страницы психологи и тесты -------------------------------------------->
+
+                <div class="specialist__btns">
+                    <div class="specialist__btns-wrap">
+                        <span class="specialist__btns-wrap-btn trans default-anim-a">Детский психолог</span>
+                        <span class="specialist__btns-wrap-btn trans default-anim-a active">Семейный психолог</span>
+                        <!-- К активному добавляй active -->
+                        <span class="specialist__btns-wrap-btn trans default-anim-a">Расстройство пищевого
+                            поведения</span>
+                        <span class="specialist__btns-wrap-btn trans default-anim-a">Панические атаки и страхи</span>
+                    </div>
+                </div>
+
                 <div class="specialist__wrapper">
                     <div class="specialist__wrapper-item">
                         <div class="specialist__wrapper-item__img">
@@ -229,18 +243,25 @@
                             <button class="btn small-btn trans">Записаться на прием</button>
                         </div>
                     </div>
+
+                    <!-------------------------------------- item для страницы тесты (внутри доп класс у ...__content) -------------------------------------------->
+
                     <div class="specialist__wrapper-item">
                         <div class="specialist__wrapper-item__img">
                             <img src="/images/sex-4.jpg" alt="">
                         </div>
-                        <div class="specialist__wrapper-item__content">
-                            <h2>Панферова <br> Лилия Александровна</h2>
+                        <div class="specialist__wrapper-item__content test">
+                            <h2>Очень точный тест на определение типа личности по MBTI</h2>
                             <div>
-                                <p>Психолог, сексолог</p>
-                                <p>Образование: Московский институт технологий и управления</p>
-                                <p>Прием (1ч): 3000 руб.</p>
+                                <p>Предлагаем вам пройти аналог теста Майерс-Бриггс MBTI, который нередко называют
+                                    тестом на тип личности. Благодаря этому
+                                    современному тесту вы узнаете индивидуально личностные особенности, склонность к
+                                    определенному виду деятельности, о
+                                    своих предпочтениях в решении трудных вопросов. Хотите узнать о себе чуть больше? От
+                                    вас всего лишь требуется нажать на
+                                    кнопку "Пройти" и ответить на несколько вопросов.</p>
                             </div>
-                            <button class="btn small-btn trans">Записаться на прием</button>
+                            <button class="btn default-btn trans">Пройти</button>
                         </div>
                     </div>
                 </div>
@@ -272,6 +293,40 @@
                 </div>
             </div>
         </section>
+
+        <!-------------------------------------- Контент для регистрация и авторизация (на авторизации просто уберешь что не надо) -------------------------------------------->
+
+        <section class="log">
+            <div class="log__wrapper">
+                <div class="log__imgs">
+                    <div class="log__imgs-img">
+                        <img src="/images/log-1.jpg" alt="">
+                    </div>
+                    <div class="log__imgs-img">
+                        <img src="/images/log-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="log__form">
+                    <form>
+                        <input type="text" name="log-name" placeholder="Имя" required>
+                        <input type="text" name="log-surname" placeholder="Фамилия" required>
+                        <input type="tel" name="log-tel" placeholder="Номер телефона" required>
+                        <input type="password" name="log-pass" placeholder="Пароль" required>
+                        <input type="password" name="log-pass-r" placeholder="Повтор пароля" required>
+                        <div>
+                            <input type="checkbox" name="log-policy" id="log-policy">
+                            <label for="log-policy"></label>
+                            <p>Я даю свое согласие на обработку персональных данных</p>
+                        </div>
+                        <button type="submit" class="trans btn small-btn">Авторизоваться</button>
+                    </form>
+                    <div>
+                        <p>У Вас нет аккаунта? <a href="">Зарегистрироваться</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
         <div class="container">
