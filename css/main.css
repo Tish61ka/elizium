@@ -1557,7 +1557,8 @@ header {
     gap: 65px;
 }
 
-.films-desc__wrapper p {
+.films-desc__wrapper p,
+.films-desc__wrapper__item-left-desc p {
     font-size: 22px;
 }
 
@@ -1602,6 +1603,7 @@ header {
 
     flex: 0 0 calc(30% - 35px);
 }
+
 
 @media (max-width: 1100px) {
     .films-desc__wrapper__item-left>div:first-of-type {
@@ -1661,11 +1663,79 @@ header {
 }
 
 @media (max-width: 600px) {
-    .films-desc__wrapper p {
+    .films-desc__wrapper p,
+    .films-desc__wrapper__item-left-desc p {
         font-size: 15px;
     }
 
     .films-desc__wrapper__item-right {
         gap: 10px;
+    }
+}
+
+.review-form{
+    margin-top: 30px;
+}
+
+.review-form__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.review-form__wrapper-img{
+    flex: 0 0 calc(25% - 10px);
+}
+
+.review-form__wrapper-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+
+    width: 100%;
+    max-width: 900px;
+
+    border-top: 1px solid var(--txt);
+}
+
+.review-form__wrapper-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.review-form__wrapper-content form textarea{
+    width: 100%;
+    height: 310px;
+
+    background: transparent;
+    border: 1px solid var(--txt);
+
+    font-size: 22px;
+    color: var(--txt);
+
+    resize: vertical;
+    
+    padding: 0 24px;
+    padding-top: 23px;
+}
+
+
+@media (max-width: 900px) {
+    .review-form__wrapper-img{
+        display: none;
+    }
+
+    .review-form__wrapper-content{
+        padding-top: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .review-form__wrapper-content form textarea{
+        font-size: 15px;
     }
 }
