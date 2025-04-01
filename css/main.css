@@ -1552,6 +1552,10 @@ header {
 /*--------------------------------------------------------------------------------------*/
 /* films-desc */
 
+.films-desc{
+    position: relative;
+}
+
 .films-desc__wrapper {
     display: flex;
     gap: 65px;
@@ -1722,6 +1726,45 @@ header {
     padding-top: 23px;
 }
 
+.films-desc__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: color-mix(in srgb, var(--black), transparent 50%);
+}
+
+.films-desc__modal.active{
+    display: flex;
+}
+
+.films-desc__modal > *{
+    position: relative;
+
+    max-width: 800px;
+}
+
+.films-desc__modal .specialist__modal-wrapper{
+    padding-top: 70px;
+}
+
+.films-desc__modal .specialist__modal-wrapper p{
+    font-size: 22px;
+    text-align: center;
+}
+
+.specialist__modal-wrapper__btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 @media (max-width: 900px) {
     .review-form__wrapper-img{
