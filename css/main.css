@@ -2,6 +2,8 @@
 /* header */
 
 header {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +11,7 @@ header {
     width: 100%;
 
     padding: 80px 10px;
+
 }
 
 .header__wrapper {
@@ -48,6 +51,9 @@ header {
     gap: 5px;
 
     width: 35px;
+
+    transition-delay: 400ms;
+
 }
 
 .burger span {
@@ -55,6 +61,10 @@ header {
     height: 6px;
 
     border: 0.50px solid var(--txt);
+
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
 }
 
 .burger::before,
@@ -65,7 +75,83 @@ header {
     height: 6px;
 
     border: 0.50px solid var(--txt);
+
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
 }
+
+
+.burger.active{
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+    height: 35px;
+}
+
+.burger.active::before{
+    position: absolute;
+
+    height: 100%;
+}
+
+.burger.active span{
+   transform: rotate(45deg) translate(1px, 1px);
+    transition-delay: 400ms;
+
+    width: 80%;
+    height: 1px;
+}
+
+.burger.active::after{
+   transform: rotate(-45deg);
+    transition-delay: 400ms;
+
+
+    width: 80%;
+    height: 1px;
+}
+
+.mobile__nav{
+    position: absolute;
+    top: 100%;
+
+    display: none;
+
+    width: calc(100% - 20px);
+
+    border: 1px solid var(--black);
+    background-color: var(--back);
+
+    z-index: 50;
+}
+
+.mobile__nav.active{
+    display: block;
+}
+
+.mobile__nav nav ul li{
+    width: 100%;
+}
+
+.mobile__nav nav ul li a{
+    display: block;
+
+    text-align: center;
+
+    padding: 20px 0;
+}
+
+.mobile__nav nav ul li a.active{
+    background-color: var(--accent);
+}
+
+.mobile__nav nav ul li:not(:last-of-type) a{
+    border-bottom: 1px solid var(--black);
+}
+
+
 
 @media (max-width: 700px) {
     .header__wrapper nav {
@@ -85,6 +171,19 @@ header {
 
     .burger {
         display: flex;
+    }
+
+    .mobile__nav nav{
+        display: block;
+    }
+
+    .mobile__nav nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        padding: 20px 10px;
     }
 }
 
