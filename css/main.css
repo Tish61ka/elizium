@@ -1926,7 +1926,8 @@ header {
     border: 1px solid var(--txt);
 }
 
-.test-page__wrapper-content-head h1 {
+.test-page__wrapper-content-head h1,
+.test-page__wrapper-content-text h2 {
     max-width: 600px;
 
     font-size: 28px;
@@ -1973,6 +1974,17 @@ header {
     font-size: 28px;
 }
 
+.test-page__wrapper-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 25px;
+}
+
+.test-page__wrapper-content-text p {
+    font-size: 22px !important;
+}
+
 @media (max-width: 1000px) {
     .test-page__wrapper-img {
         display: none;
@@ -2012,7 +2024,8 @@ header {
         font-size: 15px !important;
     }
 
-    .test-page__wrapper-content h1 {
+    .test-page__wrapper-content h1,
+    .test-page__wrapper-content-text h2 {
         font-size: 20px;
     }
 
