@@ -2033,3 +2033,252 @@ header {
         order: 1;
     }
 }
+
+/*--------------------------------------------------------------------------------------*/
+/* profile */
+
+.profile__wrapper {
+    display: flex;
+    gap: 90px;
+}
+
+.profile__wrapper-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    flex: 1 0 calc(100% - 590px);
+}
+
+.profile__wrapper-content-info {
+    display: flex;
+    gap: 25px;
+}
+
+.profile__wrapper-content-info-img {
+    flex: 0 0 405px;
+}
+
+.profile__wrapper-content-info-main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.profile__wrapper-content-info-main-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    width: 100%;
+
+    border-bottom: 1px solid var(--txt);
+
+    padding-bottom: 10px;
+}
+
+.profile__wrapper-content-info-main-head h1 {
+    max-width: 330px;
+
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.profile__wrapper-content-info-main-head button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid var(--txt);
+}
+
+.profile__wrapper-content-info-main-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    height: 100%;
+}
+
+.profile__wrapper-content-info-main-data * {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.profile__wrapper-content-info-main-data span {
+    margin-left: 10px;
+}
+
+.profile__wrapper-content-history {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    border-top: 1px solid var(--txt);
+
+    padding-top: 40px;
+}
+
+.profile__wrapper-content-history h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.profile__wrapper-content-history table {
+    width: 100%;
+
+    border: 1px solid var(--txt);
+    border-collapse: collapse;
+}
+
+.profile__wrapper-content-history table td,
+.profile__wrapper-content-history table th {
+    width: 28%;
+
+    font-size: 20px;
+    text-align: left;
+
+    border: 1px solid var(--txt);
+
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.profile__wrapper-content-history table td:last-of-type,
+.profile__wrapper-content-history table th:last-of-type {
+    width: 19%;
+}
+
+.profile__wrapper-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    flex: 0 0 500px;
+}
+
+.profile__wrapper-aside h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.profile__wrapper-aside form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border: 1px solid var(--txt);
+
+    padding: 25px;
+}
+
+.profile__wrapper-aside form textarea {
+    width: 100%;
+    min-height: 100px;
+
+    background: transparent;
+    border: 1px solid var(--txt);
+
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--txt);
+
+    padding-top: 13px;
+    padding-left: 15px;
+
+    resize: vertical;
+}
+
+.profile__wrapper-aside form>div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile__wrapper-aside form>div input {
+    display: none;
+}
+
+.profile__wrapper-aside form>div input+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--txt);
+    width: 29px;
+    height: 29px;
+
+    cursor: pointer;
+}
+
+.profile__wrapper-aside form>div input+label::before {
+    content: url('/images//icons/check.svg');
+
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+
+    opacity: 0;
+}
+
+.profile__wrapper-aside form>div input:checked+label::before {
+    opacity: 1;
+}
+
+.profile__wrapper-aside form>div a {
+    font-size: 15px;
+}
+
+.profile__wrapper-modal {
+    position: relative;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    height: fit-content;
+
+    border: 1px solid var(--txt);
+
+    padding: 0 50px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+.profile__wrapper-modal.active {
+    display: flex;
+}
+
+.profile__wrapper-modal *:not(button) {
+    max-width: 395px;
+    width: 100%;
+}
+
+.profile__wrapper-modal button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid var(--txt);
+}
+
+.profile__wrapper-modal button img {
+    width: 65%;
+}

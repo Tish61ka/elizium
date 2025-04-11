@@ -824,10 +824,28 @@
                         </div>
                     </div>
                     <div class="profile__wrapper-content-history">
-                        <div></div>
+                        <h2>История бронирования</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Специалист</th>
+                                    <th>Направление</th>
+                                    <th>Дата</th>
+                                    <th>Цена</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Понуровская Анастасия Владимировна</td>
+                                    <td>Психолог, сексолог</td>
+                                    <td>20,05,2025</td>
+                                    <td>2800</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="profile__wrapper-form">
+                <div class="profile__wrapper-aside">
                     <h2>Вы хотите предложить свои услуги?</h2>
                     <form>
                         <textarea name="profile__wrapper-form-spec" id="" required
@@ -836,7 +854,19 @@
                             placeholder="Напишите какое у Вас образование"></textarea>
                         <textarea name="profile__wrapper-form-cost" id="" required
                             placeholder="Обозначте цену за услугу"></textarea>
+                        <div>
+                            <input type="checkbox" required name="profile__wrapper-form-check"
+                                id="profile__wrapper-form-check">
+                            <label for="profile__wrapper-form-check" class="trans"></label>
+                            <a href="/">Я даю свое согласие на обработку персональных данных</a>
+                        </div>
+                        <button type="submit" class="btn default-btn trans">Отправить</button>
                     </form>
+                </div>
+                <div class="profile__wrapper-modal"> <!-- Добавь active -->
+                    <button><img src="/images/icons/close.svg" alt=""></button>
+                    <h3>Ваша заявка отправлена на обработку!</h3>
+                    <p>При одобрении анкеты, Вы увидите Ваш профиль с услугой на странице психологи/сексологи</p>
                 </div>
             </div>
         </div>
