@@ -2282,3 +2282,53 @@ header {
 .profile__wrapper-modal button img {
     width: 65%;
 }
+
+@media (max-width: 1400px) {
+    .profile__wrapper-aside {
+        flex: 0 0 300px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .profile__wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile__wrapper-content {
+        display: contents;
+    }
+
+    .profile__wrapper-content-info {
+        order: 1;
+    }
+
+    .profile__wrapper-content-history {
+        order: 3;
+    }
+
+    .profile__wrapper-aside,
+    .profile__wrapper-modal {
+        order: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile__wrapper-content-info {
+        flex-direction: column;
+    }
+
+    .profile__wrapper-content-history {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .profile__wrapper-content-history table {
+        min-width: 700px;
+
+    }
+
+    .profile__wrapper-content-info-img {
+        flex: auto;
+    }
+}
