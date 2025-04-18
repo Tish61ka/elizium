@@ -2332,3 +2332,40 @@ header {
         flex: auto;
     }
 }
+
+.admin-films{
+    margin-bottom: 100px;
+}
+
+.admin-films-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-films__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.admin-films__wrapper-item {
+    display: flex;
+
+    gap: 20px;
+}
+
+.admin-films__wrapper-item-img img {
+    width: 561px;
+}
+
+.admin-films__wrapper-item-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.admin-films__wrapper-item-btn button {
+    width: 100%;
+}
