@@ -172,3 +172,64 @@ a>img {
         padding-bottom: 7px;
     }
 }
+
+/* for form*/
+
+.default-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 600px;
+    width: 100%;
+}
+
+.default-input.small {
+    max-width: 300px;
+}
+
+.default-input label {
+    font-size: 22px;
+    color: var(--txt);
+}
+
+.default-input input {
+    width: 100%;
+    height: 53px;
+
+    border: 1px solid var(--txt);
+    background: transparent;
+
+    font-size: 22px;
+    color: var(--txt);
+
+    padding-left: 10px;
+}
+
+.default-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.default-area textarea {
+    width: 100%;
+    min-height: 145px;
+
+    border: 1px solid var(--txt);
+    background: transparent;
+    resize: vertical;
+
+    font-size: 22px;
+    color: var(--txt);
+
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.default-area label {
+    font-size: 22px;
+    color: var(--txt);
+}

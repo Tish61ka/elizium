@@ -2593,3 +2593,34 @@ header {
 .admin-articles-add__wrapper-btns label {
     cursor: pointer;
 }
+
+
+/*--------------------------------------------------------------------------------------*/
+/* admin-films-add */
+
+.admin-films-add {
+    margin-bottom: 100px;
+}
+
+.admin-films-add__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.admin-films-add__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-films-add__wrapper-btns {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.admin-films-add__wrapper-btns input {
+    display: none;
+}
