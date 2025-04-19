@@ -2464,12 +2464,20 @@ header {
     margin-bottom: 100px;
 }
 
+.admin-articles>div {
+    position: relative;
+}
+
 .admin-articles__wrapper {
     position: relative;
 
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.admin-articles__wrapper-c {
+    position: static;
 }
 
 .admin-articles__wrapper-item {
