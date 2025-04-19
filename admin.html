@@ -208,7 +208,7 @@
             </div>
         </section>
 
-        <div class="admin-articles-add">
+        <section class="admin-articles-add">
             <div class="wrapper container">
                 <h1 class="title">Добавить статью</h1>
                 <div class="admin-articles-add__wrapper">
@@ -356,9 +356,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="admin-films-add">
+        <section class="admin-films-add">
             <div class="wrapper container">
                 <h1 class="title">Добавить фильм</h1>
                 <div class="admin-films-add__wrapper">
@@ -528,7 +528,137 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="admin-test-add">
+            <div class="wrapper container">
+                <h1 class="title">Добавить тест</h1>
+                <div class="admin-test-add__wrapper">
+                    <form action="">
+                        <div class="default-input">
+                            <label>Название:</label>
+                            <input type="text" required placeholder="Введите название" name="admin-test-add-name">
+                        </div>
+                        <div class="default-area">
+                            <label>Описание:</label>
+                            <textarea required placeholder="Введите описание" name="admin-test-add-desc"></textarea>
+                        </div>
+                        <div class="default-input small">
+                            <label>Количество вопросов:</label>
+                            <input type="text" required placeholder="Введите количество" name="admin-test-add-count">
+                        </div>
+                        <div class="default-input">
+                            <label>Первый вопрос:</label>
+                            <input type="text" required placeholder="Введите вопрос" name="admin-test-add-1">
+                        </div>
+                        <div class="default-area">
+                            <label>Результат теста:</label>
+                            <textarea required placeholder="Введите результат" name="admin-test-add-result"></textarea>
+                        </div>
+                        <div class="admin-articles-add__wrapper-btns">
+                            <input type="file" name="admin-test-add-main-img" id="admin-test-add-main-img">
+                            <label for="admin-test-add-main-img" class="btn small-btn trans">Выбрать основное
+                                фото</label>
+                            <button class="btn default-btn trans">Добавить тест</button>
+                        </div>
+                    </form>
+                    <div class="main__wrapper container">
+                        <div class="main__img">
+                            <img src="/images/main-img-1.jpg" alt="">
+                            <div>
+                                <input type="file" name="article-img-2" id="article-img-2">
+                                <label for="article-img-2" class="btn small-btn trans">Загрузить фото</label>
+                            </div>
+                        </div>
+                        <div class="main__content">
+                            <div class="main__content-txt" style="justify-content: flex-end; height: 100%;;">
+                                <p>
+                                    Узнать свой психологический возраст
+                                </p>
+                                <a href="" class="btn default-btn trans">Пройти</a>
+                            </div>
+                            <div class="main__content-img">
+                                <img src="/images/main-img-2.jpg" alt="">
+                                <div>
+                                    <input type="file" name="article-img-2" id="article-img-2">
+                                    <label for="article-img-2" class="btn small-btn trans">Загрузить фото</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__img">
+                            <img src="/images/main-img-3.jpg" alt="">
+                            <div>
+                                <input type="file" name="article-img-2" id="article-img-2">
+                                <label for="article-img-2" class="btn small-btn trans">Загрузить фото</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Психологический возраст – это не просто какое-то современное понятие или очередная
+                        характеристика, которую важно узнать
+                        о себе. Это нечто большее. На него не влияет биологический или физический возраст. С течением
+                        времени, в зависимости от
+                        внутренних и внешних факторов, он может меняться в любую сторону, как в сторону омоложения, так
+                        и в сторону старения.
+                        И все-таки, почему так важно его знать? Этот параметр может определять наши интересы, хобби,
+                        влиять на постановку целей
+                        и даже на стиль жизни. Наша трехфакторная модель психологического возраста включает субшкалы
+                        "позитивность",
+                        "увлеченность", "открытость опыту", что помогает лучше понять себя.
+                        Определить свой психологический возраст поможет онлайн тест. Кто у вас внутри? Подросток,
+                        жаждущий всего нового? Зрелый
+                        самодостаточный семьянин? Повидавший многое пенсионер или кто‐то другой? Профессиональный тест
+                        на возраст покажет
+                        истину.
+                    </p>
+                    <div class="test-page__wrapper container">
+                        <div class="test-page__wrapper-img">
+                            <img src="/images/test-page-1.jpg" alt="">
+                            <div>
+                                <input type="file" name="article-img-2" id="article-img-2">
+                                <label for="article-img-2" class="btn small-btn trans">Загрузить фото</label>
+                            </div>
+                        </div>
+                        <div class="test-page__wrapper-content">
+                            <div class="test-page__wrapper-content-head">
+                                <h1>2. Я больше доверяю своим инстинктам, чем мнению других.</h1>
+                                <button><img src="/images/icons/close.svg" alt=""></button>
+                            </div>
+                            <div>
+                                <input type="radio" name="quest" id="quest1">
+                                <label for="quest1" class="trans"></label>
+                                <p>Да</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="quest" id="quest2">
+                                <label for="quest2" class="trans"></label>
+                                <p>Скорее да, чем нет</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="quest" id="quest3">
+                                <label for="quest3" class="trans"></label>
+                                <p>Скорее нет, чем да</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="quest" id="quest4">
+                                <label for="quest4" class="trans"></label>
+                                <p>Нет</p>
+                            </div>
+                        </div>
+                        <div class="test-page__wrapper-steps">
+                            <div class="test-page__wrapper-steps-img">
+                                <img src="/images/test-page-2.jpg" alt="">
+                                <div>
+                                    <input type="file" name="article-img-2" id="article-img-2">
+                                    <label for="article-img-2" class="btn small-btn trans">Загрузить фото</label>
+                                </div>
+                            </div>
+                            <p><span>2</span>/<span>10</span></p>
+                            <a href="" class="btn small-btn trans">Вернуться назад</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>

@@ -200,6 +200,55 @@ header {
     flex: 0 0 25%;
 }
 
+.main__img:has(input) {
+    position: relative;
+
+    height: 860px;
+
+    background: #D9D9D9;
+}
+
+.main__content-img {
+    position: relative;
+
+    height: 502px;
+    min-height: 502px;
+
+    background: #D9D9D9;
+}
+
+.main__img:has(input)>div,
+.main__content-img>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.main__img:has(input)>div input,
+.main__content-img>div input {
+    display: none;
+}
+
+.main__img:has(input)>div label,
+.main__content-img>div label {
+    background: #D9D9D9;
+
+    cursor: pointer;
+}
+
+
+.main__img:has(input) img,
+.main__content-img img {
+    height: 100%;
+}
+
 .main__content {
     display: flex;
     flex-direction: column;
@@ -2069,6 +2118,54 @@ header {
     font-size: 22px !important;
 }
 
+.test-page__wrapper-img:has(input) {
+    position: relative;
+
+    height: 605px;
+
+    background: #D9D9D9;
+}
+
+.test-page__wrapper-steps-img:has(input):last-of-type {
+    position: relative;
+
+    height: 250px;
+
+    background: #D9D9D9;
+}
+
+.test-page__wrapper-steps-img:has(input)>div,
+.test-page__wrapper-img:has(input)>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.test-page__wrapper-steps-img:has(input)>div input,
+.test-page__wrapper-img:has(input)>div input {
+    display: none;
+}
+
+.test-page__wrapper-steps-img:has(input)>div label,
+.test-page__wrapper-img:has(input)>div label {
+    background: #D9D9D9;
+
+    cursor: pointer;
+}
+
+
+.test-page__wrapper-steps-img:has(input) img,
+.test-page__wrapper-img:has(input)>div img {
+    height: 100%;
+}
+
 @media (max-width: 1000px) {
     .test-page__wrapper-img {
         display: none;
@@ -2623,4 +2720,27 @@ header {
 
 .admin-films-add__wrapper-btns input {
     display: none;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/* admin-test-add */
+
+.admin-test-add {
+    margin-bottom: 100px;
+}
+
+.admin-test-add__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.admin-test-add__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-test-add__wrapper>p {
+    font-size: 22px;
 }
