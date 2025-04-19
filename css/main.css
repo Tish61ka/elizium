@@ -1679,6 +1679,48 @@ header {
     height: fit-content;
 }
 
+.films-desc__wrapper__item-left>div:first-of-type:has(input) {
+    position: relative;
+
+    min-height: 625px;
+    height: 625px;
+
+    background: #D9D9D9;
+}
+
+.films-desc__wrapper__item-left>div:first-of-type:has(input) img {
+    height: 100%;
+}
+
+.films-desc__wrapper__item-left>div:first-of-type:has(input) div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.films-desc__wrapper__item-left>div:first-of-type:has(input) input {
+    display: none;
+}
+
+.films-desc__wrapper__item-left>div:first-of-type:has(input) label {
+    cursor: pointer;
+
+    background: #D9D9D9;
+}
+
+.films-desc__wrapper__item-left>div:first-of-type:has(input) label:hover {
+    background: var(--txt);
+}
+
 .films-desc__wrapper__item-left-title {
     flex: 0 0 calc(25% - 25px / 2);
 }
@@ -1705,6 +1747,48 @@ header {
     gap: 25px;
 
     flex: 0 0 calc(30% - 35px);
+}
+
+.films-desc__wrapper__item-right>div:has(input) {
+    position: relative;
+
+    min-height: 380px;
+    height: 380px;
+
+    background: #D9D9D9;
+}
+
+.films-desc__wrapper__item-right>div:has(input):last-of-type {
+    height: 625px;
+}
+
+.films-desc__wrapper__item-right>div:has(input) img {
+    height: 100%;
+}
+
+.films-desc__wrapper__item-right>div:has(input) div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.films-desc__wrapper__item-right>div:has(input) input {
+    display: none;
+}
+
+.films-desc__wrapper__item-right>div:has(input) label {
+    cursor: pointer;
+
+    background: #D9D9D9;
 }
 
 
@@ -2376,6 +2460,10 @@ header {
 /*--------------------------------------------------------------------------------------*/
 /* admin articles */
 
+.admin-articles {
+    margin-bottom: 100px;
+}
+
 .admin-articles__wrapper {
     position: relative;
 
@@ -2426,4 +2514,74 @@ header {
     width: 415px;
     min-width: 415px;
     height: 415px;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/* admin-articles-add */
+
+.admin-articles-add {
+    margin-bottom: 100px;
+}
+
+.admin-articles-add__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.admin-articles-add__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-articles-add__wrapper form>div:not(.admin-articles-add__wrapper-btns) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-articles-add__wrapper form>div:not(.admin-articles-add__wrapper-btns):has(input) {
+    max-width: 600px;
+}
+
+.admin-articles-add__wrapper form>div:not(.admin-articles-add__wrapper-btns) *:not(label) {
+    border: 1px solid var(--txt);
+    background: transparent;
+
+    font-size: 22px;
+    color: var(--txt);
+
+    padding-left: 10px;
+}
+
+.admin-articles-add__wrapper form>div:not(.admin-articles-add__wrapper-btns) label {
+    font-size: 22px;
+}
+
+.admin-articles-add__wrapper form>div:not(.admin-articles-add__wrapper-btns) input {
+    height: 55px;
+}
+
+.admin-articles-add__wrapper form>div:not(.admin-articles-add__wrapper-btns) textarea {
+    min-height: 145px;
+
+    resize: vertical;
+
+    padding-top: 10px;
+}
+
+.admin-articles-add__wrapper-btns {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.admin-articles-add__wrapper-btns input {
+    display: none;
+}
+
+.admin-articles-add__wrapper-btns label {
+    cursor: pointer;
 }
