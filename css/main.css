@@ -2237,7 +2237,23 @@ header {
 }
 
 .profile__wrapper-content-info-img {
+    position: relative;
+
     flex: 0 0 405px;
+}
+
+.profile__wrapper-content-info-img input{
+    display: none;
+}
+
+.profile__wrapper-content-info-img label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #D9D9D9;
+    cursor: pointer;
 }
 
 .profile__wrapper-content-info-main {
@@ -2261,11 +2277,17 @@ header {
     padding-bottom: 10px;
 }
 
-.profile__wrapper-content-info-main-head h1 {
+.profile__wrapper-content-info-main-head-name{
     max-width: 330px;
+
+    background: transparent;
+    border: none;
 
     font-size: 30px;
     font-weight: 400;
+    color: var(--txt);
+
+    cursor: default;
 }
 
 .profile__wrapper-content-info-main-head button {
@@ -2288,13 +2310,44 @@ header {
     height: 100%;
 }
 
+.profile__wrapper-content-info-main-data input{
+    background: transparent;
+    border: none;
+
+    margin-left: 10px;
+
+    cursor: default;
+}
+
 .profile__wrapper-content-info-main-data * {
     font-size: 19px;
     font-weight: 400;
 }
 
 .profile__wrapper-content-info-main-data span {
+    position: relative;
+
     margin-left: 10px;
+}
+
+.profile__wrapper-content-info-main-data span input{
+    position: absolute;
+    left: 0;
+    top: -2px;
+
+    opacity: 0;
+}
+
+.profile__wrapper-content-info-main-data input[type="email"]{
+    width: 70%;
+}
+
+.profile__wrapper-content-info-main-data span input.active{
+    opacity: 1;
+}
+
+.profile__wrapper-content-info-main-data span input[type='date']::-webkit-datetime-edit{
+    /* opacity: 0;  мб надо, чтобы не было надписи дд.мм.гггг*/ 
 }
 
 .profile__wrapper-content-history {

@@ -808,18 +808,22 @@
                     <div class="profile__wrapper-content-info">
                         <div class="profile__wrapper-content-info-img">
                             <img src="/images/sex-2.jpg" alt="">
+                            <div>
+                                <label for="profile__wrapper-content-info-img" class="btn default-btn trans">Изменить</label>
+                                <input type="file" name="" id="profile__wrapper-content-info-img">
+                            </div>
                         </div>
                         <div class="profile__wrapper-content-info-main">
                             <div class="profile__wrapper-content-info-main-head">
-                                <h1>Панферова Лилия Александровна</h1>
+                                <textarea type="text" readonly placeholder="Панферова Лилия Александровна" class="profile__wrapper-content-info-main-head-name" name=""></textarea>
                                 <button><img src="/images/icons/edit.svg" alt=""></button>
                             </div>
                             <div class="profile__wrapper-content-info-main-data">
                                 <p>Дата регистрации:<span>17.04.2024</span></p>
-                                <p>Страна, город:<span>Россия, Астрахань</span></p>
-                                <p>Дата рождения:<span>15.02.1999</span></p>
-                                <p>Номер телефона:<span>+79885907202 </span></p>
-                                <p>E-mail:<span>valentina.borm04@mail.ru</span></p>
+                                <p>Страна, город: <input type="text" value="Россия, Астрахань" readonly></p>
+                                <p>Дата рождения: <span><label for="date-input">15.02.1999</label><input type="date"  id="date-input" name="date-input" ></span></p>
+                                <p>Номер телефона: <input type="tel" value="+79885907202" readonly></p>
+                                <p>E-mail: <input type="email" value="valentina.borm04@mail.ru" readonly></p>
                             </div>
                         </div>
                     </div>
