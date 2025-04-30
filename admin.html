@@ -620,28 +620,29 @@
                         </div>
                         <div class="test-page__wrapper-content">
                             <div class="test-page__wrapper-content-head">
-                                <h1>2. Я больше доверяю своим инстинктам, чем мнению других.</h1>
+                                <textarea name="" placeholder="2. Я больше доверяю своим инстинктам, чем мнению других."
+                                    readonly></textarea>
                                 <button><img src="/images/icons/close.svg" alt=""></button>
                             </div>
                             <div>
                                 <input type="radio" name="quest" id="quest1">
                                 <label for="quest1" class="trans"></label>
-                                <p>Да</p>
+                                <input type="text" value="Да" readonly name="">
                             </div>
                             <div>
                                 <input type="radio" name="quest" id="quest2">
                                 <label for="quest2" class="trans"></label>
-                                <p>Скорее да, чем нет</p>
+                                <input type="text" value="Скорее да, чем нет" readonly name="">
                             </div>
                             <div>
                                 <input type="radio" name="quest" id="quest3">
                                 <label for="quest3" class="trans"></label>
-                                <p>Скорее нет, чем да</p>
+                                <input type="text" value="Скорее нет, чем да" readonly name="">
                             </div>
                             <div>
                                 <input type="radio" name="quest" id="quest4">
                                 <label for="quest4" class="trans"></label>
-                                <p>Нет</p>
+                                <input type="text" value="Нет" readonly name="">
                             </div>
                         </div>
                         <div class="test-page__wrapper-steps">
@@ -657,6 +658,116 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="admin-users">
+            <div class="admin-users__title container">
+                <h1>Все пользователи</h1>
+                <div>
+                    <label class="default-input">
+                        <input type="text" placeholder="Введите фамилию" required name="">
+                    </label>
+                    <button class="btn small-btn trans">Поиск</button>
+                </div>
+            </div>
+            <div class="admin-users__wrapper container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дата регистрации</th>
+                            <th>Страна, город</th>
+                            <th>ФИО пользователя</th>
+                            <th>Услуга</th>
+                            <th>Дата рождения</th>
+                            <th>Номер телефона</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>17.07.2023</td>
+                            <td>Астрахань</td>
+                            <td>Л.А. Панферова</td>
+                            <td>Сексолог</td>
+                            <td>17.07.2023</td>
+                            <td>+789885907202</td>
+                            <td><button class="btn small-btn trans">Заблокировать</button></td>
+                        </tr>
+                        <tr>
+                            <td>17.07.2023</td>
+                            <td>Астрахань</td>
+                            <td>Л.А. Панферова</td>
+                            <td>Сексолог</td>
+                            <td>17.07.2023</td>
+                            <td>+789885907202</td>
+                            <td><button class="btn small-btn trans">Заблокировать</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="admin-users__wrapper-comments">
+                    <h2>Все комментарии</h2>
+                    <div class="admin-users__wrapper-comments-content">
+                        <div class="admin-users__wrapper-comments-content-text">
+                            <p>Статья о психологии очень познавательна! Особенно понравилась часть о влиянии эмоций на
+                                принятие решений. Часто не
+                                задумываюсь, насколько на самом деле наши чувства определяют выбор. Уверен, что эта
+                                информация поможет мне лучше
+                                понимать свои реакции в разных ситуациях. Спасибо авторам за интересный и важный
+                                материал!</p>
+                        </div>
+                        <div class="admin-users__wrapper-comments-content-btn">
+                            <p>Комментарий пользователя: <span>В.С. Комарова</span></p>
+                            <button class="btn small-btn trans">Удалить комментарий</button>
+                        </div>
+                    </div>
+                    <div class="admin-users__wrapper-comments-content">
+                        <div class="admin-users__wrapper-comments-content-text">
+                            <p>Статья о психологии очень познавательна! Особенно понравилась часть о влиянии эмоций на
+                                принятие решений. Часто не
+                                задумываюсь, насколько на самом деле наши чувства определяют выбор. Уверен, что эта
+                                информация поможет мне лучше
+                                понимать свои реакции в разных ситуациях. Спасибо авторам за интересный и важный
+                                материал!</p>
+                        </div>
+                        <div class="admin-users__wrapper-comments-content-btn">
+                            <p>Комментарий пользователя: <span>В.С. Комарова</span></p>
+                            <button class="btn small-btn trans">Удалить комментарий</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-requests">
+                    <h2>Заявки на предоставление услуг</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ФИО Пользователя</th>
+                                <th>Специальность</th>
+                                <th>Цена</th>
+                                <th>Образование</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Л.А. Панферова</td>
+                                <td>Психолог, кризисный психолог, семейный психолог, сексолог</td>
+                                <td>
+                                    Семейная терапия (1,5 ч): 3500 руб.<br>
+                                    Прием (1,5 ч): 3000 руб.
+                                </td>
+                                <td>Московский университет имени Плеханова</td>
+                                <td class="actions">
+                                    <button class="btn small-btn trans">Принять</button>
+                                    <button class="btn small-btn trans">Отклонить</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </section>
     </main>

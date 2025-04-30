@@ -664,6 +664,21 @@ header {
     margin-right: 30px;
 }
 
+.footer__wrapper__item:last-of-type {
+    justify-content: space-between;
+}
+
+.footer__wrapper__item:last-of-type>p {
+    font-size: 18px !important;
+    max-width: 460px;
+}
+
+.footer__wrapper__item:last-of-type>div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .footer__wrapper__item-alt-logo {
     width: 55%;
 
@@ -768,7 +783,7 @@ header {
     }
 
     .footer__wrapper__item:not(:first-of-type)>nav,
-    .footer__wrapper__item:not(:first-of-type)>ul {
+    .footer__wrapper__item:not(:first-of-type)>div>ul {
         display: none;
 
         align-items: center;
@@ -793,10 +808,15 @@ header {
         text-align: center;
     }
 
-    .footer__wrapper__item:not(:first-of-type) p::after {
+    .footer__wrapper__item:not(:first-of-type) p:after,
+    .footer__wrapper__item:last-of-type div p:after {
         content: url("/images/icons/arrow-r.svg");
 
         transform: translateY(-5px);
+    }
+
+    .footer__wrapper__item:last-of-type>p:after {
+        content: none;
     }
 
     .footer__wrapper__item:first-of-type p {
@@ -853,6 +873,11 @@ header {
 .specialist__wrapper-item__img {
     width: 100%;
     max-width: 355px;
+    height: 355px;
+}
+
+.specialist__wrapper-item__img img {
+    height: 100%;
 }
 
 .specialist__wrapper-item__content {
@@ -923,6 +948,14 @@ header {
         width: 100%;
 
         order: 3;
+    }
+
+    .specialist__wrapper-item__img {
+        height: auto;
+    }
+
+    .specialist__wrapper-item__img img {
+        height: auto;
     }
 }
 
@@ -2060,11 +2093,20 @@ header {
 }
 
 .test-page__wrapper-content-head h1,
-.test-page__wrapper-content-text h2 {
+.test-page__wrapper-content-text h2,
+.test-page__wrapper-content-head textarea {
     max-width: 600px;
+    width: 100%;
+
+    background: transparent;
 
     font-size: 28px;
     font-weight: 400;
+    color: var(--txt);
+}
+
+.test-page__wrapper-content-head textarea::placeholder {
+    color: var(--txt);
 }
 
 .test-page__wrapper-content div:not(.test-page__wrapper-content-head) {
@@ -2077,7 +2119,7 @@ header {
     font-size: 28px;
 }
 
-.test-page__wrapper-content div input {
+.test-page__wrapper-content div input[type="radio"] {
     display: none;
 }
 
@@ -2091,6 +2133,13 @@ header {
     background-color: #d9d9d9;
 
     cursor: pointer;
+}
+
+.test-page__wrapper-content div input[type="text"] {
+    background-color: transparent;
+
+    font-size: 28px;
+    color: var(--txt);
 }
 
 .test-page__wrapper-content div input:checked+label {
@@ -2242,11 +2291,11 @@ header {
     flex: 0 0 405px;
 }
 
-.profile__wrapper-content-info-img input{
+.profile__wrapper-content-info-img input {
     display: none;
 }
 
-.profile__wrapper-content-info-img label{
+.profile__wrapper-content-info-img label {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2277,7 +2326,7 @@ header {
     padding-bottom: 10px;
 }
 
-.profile__wrapper-content-info-main-head-name{
+.profile__wrapper-content-info-main-head-name {
     max-width: 330px;
 
     background: transparent;
@@ -2310,7 +2359,7 @@ header {
     height: 100%;
 }
 
-.profile__wrapper-content-info-main-data input{
+.profile__wrapper-content-info-main-data input {
     background: transparent;
     border: none;
 
@@ -2330,7 +2379,7 @@ header {
     margin-left: 10px;
 }
 
-.profile__wrapper-content-info-main-data span input{
+.profile__wrapper-content-info-main-data span input {
     position: absolute;
     left: 0;
     top: -2px;
@@ -2338,16 +2387,16 @@ header {
     opacity: 0;
 }
 
-.profile__wrapper-content-info-main-data input[type="email"]{
+.profile__wrapper-content-info-main-data input[type="email"] {
     width: 70%;
 }
 
-.profile__wrapper-content-info-main-data span input.active{
+.profile__wrapper-content-info-main-data span input.active {
     opacity: 1;
 }
 
-.profile__wrapper-content-info-main-data span input[type='date']::-webkit-datetime-edit{
-    /* opacity: 0;  мб надо, чтобы не было надписи дд.мм.гггг*/ 
+.profile__wrapper-content-info-main-data span input[type='date']::-webkit-datetime-edit {
+    /* opacity: 0;  мб надо, чтобы не было надписи дд.мм.гггг*/
 }
 
 .profile__wrapper-content-history {
@@ -2796,4 +2845,130 @@ header {
 
 .admin-test-add__wrapper>p {
     font-size: 22px;
+}
+
+.admin-users__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.admin-users__title h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.admin-users__title>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 400px;
+}
+
+.admin-users__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.admin-users__wrapper table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.admin-users__wrapper table tr *:not(:last-of-type) {
+    text-align: left;
+}
+
+.admin-users__wrapper table tr>*:last-of-type {
+    width: 10%;
+}
+
+.admin-users__wrapper table tr>* {
+    padding: 7px 0;
+}
+
+.admin-users__wrapper table td {
+    border-bottom: 1px solid var(--txt);
+}
+
+.admin-users__wrapper table tr>* {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.admin-users__wrapper-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-users__wrapper-comments-content {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-users__wrapper-comments-content-text {
+    width: 100%;
+    max-width: 845px;
+
+    border: 1px solid var(--txt);
+
+    font-size: 23px;
+
+    padding: 25px;
+}
+
+.admin-users__wrapper-comments-content-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-users__wrapper-comments-content-btn p {
+    font-size: 20px;
+}
+
+.admin-users__wrapper-comments h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.service-requests {
+    /* max-width: 800px; */
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.service-requests h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.service-requests table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.service-requests th,
+.service-requests td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--txt);
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.95rem;
+}
+
+.service-requests th {
+    font-weight: 600;
+}
+
+.service-requests .actions {
+    white-space: nowrap;
 }
