@@ -312,7 +312,7 @@
 
                 <!-------------------------------------- Модалка для секции специалисты (по идее нет на тестах) -------------------------------------------->
 
-                <div class="specialist__modal active"> <!-- При клике на кнопку добавляй active -->
+                <div class="specialist__modal"> <!-- При клике на кнопку добавляй active -->
                     <span class="specialist__modal-close">
                         <img src="/images//icons/close.svg" alt="">
                     </span>
@@ -832,11 +832,8 @@
                 <div class="profile__wrapper-content">
                     <div class="profile__wrapper-content-info">
                         <div class="profile__wrapper-content-info-img">
-                            <img src="/images/sex-2.jpg" alt="">
                             <div>
-                                <label for="profile__wrapper-content-info-img"
-                                    class="btn default-btn trans">Изменить</label>
-                                <input type="file" name="" id="profile__wrapper-content-info-img">
+                                <img src="/images/sex-2.jpg" alt="">
                             </div>
                         </div>
                         <div class="profile__wrapper-content-info-main">
@@ -855,6 +852,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="profile__wrapper-content-info-img-btns">
+                        <label for="profile__wrapper-content-info-img" class="btn small-btn trans">Сменить
+                            фотографию</label>
+                        <input type="file" name="" id="profile__wrapper-content-info-img">
+                        <button class="btn small-btn trans">Сохранить редактирование</button>
+                    </div>
                     <div class="profile__wrapper-content-history">
                         <h2>История бронирования</h2>
                         <table>
@@ -872,6 +875,25 @@
                                     <td>Психолог, сексолог</td>
                                     <td>20,05,2025</td>
                                     <td>2800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="profile__wrapper-content-history">
+                        <h2>История тестов</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Название теста</th>
+                                    <th>Результат теста</th>
+                                    <th>Дата</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Понуровская Анастасия Владимировна</td>
+                                    <td>Психолог, сексолог</td>
+                                    <td>20,05,2025</td>
                                 </tr>
                             </tbody>
                         </table>
