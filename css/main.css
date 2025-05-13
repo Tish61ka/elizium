@@ -1044,7 +1044,8 @@ header {
     max-width: 430px;
 }
 
-.specialist__modal-wrapper form input:not([type="date"]) {
+.specialist__modal-wrapper form input:not([type="date"]),
+.specialist__modal-wrapper form input:not([type="time"]) {
     background: transparent;
     border-bottom: 1px solid var(--txt);
 
@@ -1061,7 +1062,7 @@ header {
     width: fit-content;
 }
 
-.specialist__modal-wrapper form>div div {
+.specialist__modal-wrapper form>div>div div {
     max-width: 33px;
 }
 
