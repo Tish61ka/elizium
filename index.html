@@ -321,7 +321,7 @@
                         <form>
                             <input type="text" required name="specialist__modal-name" placeholder="ФИО">
                             <input type="email" required name="specialist__modal-email" placeholder="Email">
-                            <div style="display: flex; gap: 40px;">
+                            <div class="specialist__modal-wrapper-inputs">
                                 <div class="rel">
                                     <input type="date" name="specialist__modal-date" id="specialist__modal-date-1"
                                         title="Выберите дату">
@@ -333,8 +333,16 @@
                                     </label>
                                 </div>
                                 <div class="rel">
-                                    <input type="time" name="specialist__modal-date" id="specialist__modal-date-2"
-                                        title="Выберите время">
+                                    <select name="" id="">
+                                        <option value="" selected disabled>Выберите время
+                                            <img src="/images/icons/clock.svg" alt="">
+                                        </option>
+                                        <option value="">9:00</option>
+                                        <option value="">11:00</option>
+                                        <option value="">13:00</option>
+                                        <option value="">15:00</option>
+                                        <option value="">17:00</option>
+                                    </select>
                                 </div>
                             </div>
                             <button type="submit" class="btn small-btn trans">Продолжить</button>
