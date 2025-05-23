@@ -3089,3 +3089,18 @@ header {
 
     /* я не ебу как без лейбла красиво сделать, а ебаться с этим идет она нахуй */
 }
+
+.auth-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.auth-admin__wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
