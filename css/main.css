@@ -2937,12 +2937,30 @@ header {
     border-collapse: collapse;
 }
 
+.admin-users__wrapper-table button:hover {
+    background-color: var(--back);
+}
+
+.admin-users__wrapper-table,
+.admin-users__wrapper-comments {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
 .admin-users__wrapper table tr *:not(:last-of-type) {
     text-align: left;
 }
 
 .admin-users__wrapper table tr>*:last-of-type {
-    width: 10%;
+    width: 2%;
+}
+
+.admin-users__wrapper table tr>*:nth-of-type(6) {
+    white-space: nowrap;
+}
+
+.admin-users__wrapper table tr>*:nth-of-type(4) {
+    padding-right: 10px;
 }
 
 .admin-users__wrapper table tr>* {
